@@ -1,27 +1,37 @@
 
 .cosci-logo {
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 70px;
     margin: 10px 20px;
+    display: inline;
 }    
 .in-body {
 display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-.logohome {
-    width: auto;
-    height: 400px;
-    position: absolute;
-    top: 90px;
+
+.login,
+.image {
+  min-height: 100vh;
 }
-.loginbox {
-    background-color: white;
-    width: 100vw;
-    height: 70vh;
-    margin: auto;
-    margin-top: 30px;
+
+.login-btn {
+    background-color: #18477e;
+    border: none;
+    color: white;
+    text-decoration: none;
     display: inline-block;
-    padding: 40px 18px;
-    border-radius: 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.user-btn {
+    background-color: #18477e;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
 }

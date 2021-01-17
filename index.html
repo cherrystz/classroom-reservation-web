@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="font/font.css">
 
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">  
+
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,50 +19,65 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <style>
+      
     body {
-        background-image: url("pic/banner/banner.png");
+        background-image: url('pic/background.png');
+        background-color: #e5e5e5;
         background-size: cover;
+        background-position: center; 
         background-repeat: no-repeat;
-        background-position: top center;
-        background-size: cover;
-        background-attachment: fixed;
-        -webkit-background-size: cover;
-         -moz-background-size: cover;
-        -o-background-size: cover;
-        margin: 0;
-       
+        font-family: 'Kanit', sans-serif;
+
     }   
     </style>
 
     <body>
-        <div class="in-body">
-            <div>
-                <img class="cosci-logo" src="pic\coscilogo.png">
+      
+      <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="col-md-6 d-none d-md-flex">
+              <img src="pic/coscilogo.png" class="cosci-logo">
             </div>
-            <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-4">
-                    <img class="logohome" src="pic\900px-COSCI.SWU_Logo.png">
-                </div>
-                <div class="col-lg-7">
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8 loginbox">
-                            <div class="row">
-                                <div class="col-md-2"></div>
-                                <div class="col-md-8">
-                                    <h2 style="text-align: center;">ระบบจองห้องเรียน</h2>
-                                </div>
-                                <div class="col-md-2"></div>
+            <div class="col-md-6 bg-light">
+              
+                <div class="login d-flex align-items-center py-5">
+                  
+                    <div class="container">
+                        
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-10 mx-auto">
+                              <!-- <div class="btn-group btn-block" role="role" >
+                                <button type="user" class="btn btn-primary">ทั่วไป</button>
+                                <button type="admin" class="btn btn-secondary">ผู้ดูแล</button>
+                                
+                              </div> -->
+                              
+                                <h3 class="display-5" style="color: #18477e; font-weight: bold;">ระบบจองห้องเรียน</h3>
+                                <p class="mb-4" style="color: #18477e;">วิทยาลัยนวัตกรรมสื่อสารสังคม</p>
+                                <form>
+                                    <div class="form-group mb-4">
+                                        <input id="inputUsername" type="Username" placeholder="Username" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4" style="height: 50px;">
+                                    </div>
+                                    <div class="form-group mb-5">
+                                        <input id="inputPassword" type="password" placeholder="Password" required="" class="form-control rounded-pill border-0 shadow-sm px-4" style="height: 50px;">
+                                    </div>
+                                    
+                                  
+                                    <button type="submit" class="login-btn btn-block text-uppercase mb-2 rounded-pill shadow-sm" style="height: 50px;background-color: #18477e;">เข้าสู่ระบบ</button>
+                                    <span class="ml-auto"><a href="#" class="forgot-pass text-muted">ลืมรหัสผ่าน ?</a></span> 
+                                    <br>
+                                    <span class="d-block text-center my-4 text-muted">ยังไม่มีบัญชีผู้ใช้ ? <a href="#" class="register" style="color: #18477e;">ลงทะเบียนเพื่อเข้าสู่ระบบ</a> </span>
+              
+                                </form>
                             </div>
-                         </div>
-                        <div class="col-md-2"></div>
-                    </div> 
+                        </div>
+                    </div>
+    
                 </div>
             </div>
-
-            </div>
+    
         </div>
+    </div>
+        
     </body>
 </html>
