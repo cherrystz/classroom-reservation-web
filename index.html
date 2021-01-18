@@ -46,14 +46,29 @@
                         
                         <div class="row">
                             <div class="col-lg-10 col-xl-10 mx-auto">
-                              <!-- <div class="btn-group btn-block" role="role" >
-                                <button type="user" class="btn btn-primary">ทั่วไป</button>
-                                <button type="admin" class="btn btn-secondary">ผู้ดูแล</button>
-                                
-                              </div> -->
-                              
-                                <h3 class="display-5" style="color: #18477e; font-weight: bold;">ระบบจองห้องเรียน</h3>
-                                <p class="mb-4" style="color: #18477e;">วิทยาลัยนวัตกรรมสื่อสารสังคม</p>
+                                <div style="height: 101px;">
+                                    <div class="flight-types">
+                                        <input type="radio" name="flight-type" value="common" id="common" checked/>
+                                        <label for="common">
+                                        ทั่วไป
+                                        </label>
+                                    
+                                        <input type="radio" name="flight-type" value="admin" id="admin" />
+                                        <label for="admin">
+                                        ผู้ดูแล
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- <button type="user" class="btn btn-primary">ทั่วไป</button>
+                                <button type="admin" class="btn btn-secondary">ผู้ดูแล</button> -->
+
+                                <div>
+                                    <div id="blue-line-shapes"></div>
+                                    <div class="block-inline">
+                                        <h3 class="display-5" style="color: #18477e; font-weight: bold;">ระบบจองห้องเรียน</h3>
+                                        <p class="mb-4" style="color: #18477e;">วิทยาลัยนวัตกรรมสื่อสารสังคม</p>
+                                    </div>
+                                </div>
                                 <form>
                                     <div class="form-group mb-4">
                                         <input id="inputUsername" type="Username" placeholder="Username" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4" style="height: 50px;">
