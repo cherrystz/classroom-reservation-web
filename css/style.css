@@ -50,6 +50,22 @@ display: flex;
     margin-right: 20px;
 }
 
+.infobox {
+  display: inline-block;
+  border-radius: 15px;
+  width: 100%;
+  height: 25%;
+  background-color: white;
+  
+}
+
+.back-btn {
+  display: block;
+  margin-bottom: 40px;
+  width: 35px;
+  height: auto;
+}
+
 /* Segment */
 
 .flight-types {
