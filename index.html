@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="font/font.css">
 
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">  
@@ -48,13 +51,13 @@
                             <div class="col-lg-10 col-xl-10 mx-auto">
                                 <div style="height: 101px;">
                                     <div class="flight-types">
-                                        <input type="radio" name="flight-type" value="common" id="common" checked/>
+                                        <input type="radio" name="flight-type" value="common" id="common" onclick="location.href='index.html'" checked />
                                         
                                         <label for="common">
                                         ทั่วไป
                                         </label>
                                     
-                                        <input type="radio" name="flight-type" value="admin" id="admin" />
+                                        <input type="radio" name="flight-type" value="admin" id="admin" onclick="location.href='index_admin.html'" />
                                         <label for="admin">
                                         ผู้ดูแล
                                         </label>
@@ -96,6 +99,7 @@
     
         </div>
     </div>
-        
+
     </body>
+
 </html>
