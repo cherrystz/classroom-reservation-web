@@ -1,13 +1,13 @@
+body{
+  font-family: 'Kanit', sans-serif !important;
+}
 
 .cosci-logo {
-   
     width: auto;
     height: 70px;
     margin: 10px 20px;
     display: inline;
 }   
-
-
 
 .in-body {
 display: flex;
@@ -145,22 +145,15 @@ header {
   background: url('../pic/banner/banner.png') no-repeat 50% 50%;
   background-size: cover;
 }
- 
-.navbar {
-  z-index: 1;
-  background-color: transparent;
-}
 
 @media only screen and (max-width: 768px) {
   .navbar {
-      background-color: #18477E;
+      background-color: #18477E !important;
   }
 }
 
-
 .nav-item {
   position: relative;
-  
 }
 
 .active:after {
@@ -169,4 +162,19 @@ header {
   width: 100%;
   height: 2px;
   background-color: #ffffff;
+}
+
+.whiteicon {
+  filter: invert(100%);
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.site-title {
+  color: #ffffff; 
+  padding: 200px 40px;
+}
+
+#nav {
+  transition-duration: 0.5s;
 }

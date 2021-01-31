@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>COSCI - ระบบจองห้องเรียน</title>
-
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font/font.css">
 
@@ -16,21 +16,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="custom.js"></script>
 </head>
 
 <style>
-      
-    body {
-        font-family: 'Kanit', sans-serif;
-       
-    }   
+    .navbar-dark .navbar-nav .nav-link {
+    color:white;
+    }
+    .nav-link:hover .whiteicon {
+    opacity: 0.5;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    }
+
+    .nav-link:hover .txtlink {
+        color: rgba(255, 255, 255, 0.5);
+    } 
  </style>
 
 
 <body>
 <header>
-    
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark scrolling-navbar ">
+    <nav class="navbar navbar-expand-md navbar-dark scrolling-navbar fixed-top" id="nav">
+        
         <a class="navbar-brand" href="admin_home.html">
             <img src="pic/coscilogo.png" class="cosci-logo">
         </a>
@@ -40,22 +49,42 @@
         <div class="collapse navbar-collapse"  id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto"  id="navmenu">
                 <li class="nav-item active">
-                    <a class="nav-link font18 "  href="#">หน้าแรก <span class="sr-only">(current)</span></a>
+                    <a class="nav-link font18" href="admin_home.html">
+                        <span class="whiteicon"><img src="Zest.iconjar/icons/home.svg"></span>
+                        <span class="txtlink">หน้าแรก</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font18 " href="#">ห้องเรียน</a>
+                    <a class="nav-link font18" href="#">
+                        <span class="whiteicon"><img src="Zest.iconjar/icons/document.svg"></span>
+                        <span class="txtlink">ห้องเรียน</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font18 " href="#">ประวัติการจอง</a>
+                    <a class="nav-link font18" href="#">
+                        <span class="whiteicon"> <img src="Zest.iconjar/icons/history.svg"></span>
+                        <span class="txtlink">ประวัติการจอง</span></a>
                 </li>
             </ul>
-
         </div>
-    </nav>
-
- 
- 
+        
     
+    </nav>
+    <div class="text-white site-title d-inline-flex">
+            <h2>ยินดีต้อนรับเข้าสู่ระบบจองห้องออนไลน์</h2>  
+        </div>
 
 </header>
+<main class="text-center py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+        </div>
+    </div>
+
+</main>
 </body>
