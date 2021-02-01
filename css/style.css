@@ -146,12 +146,6 @@ header {
   background-size: cover;
 }
 
-@media only screen and (max-width: 768px) {
-  .navbar {
-      background-color: #18477E !important;
-  }
-}
-
 .nav-item {
   position: relative;
 }
@@ -159,7 +153,7 @@ header {
 .active:after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 2px;
   background-color: #ffffff;
 }
@@ -177,4 +171,69 @@ header {
 
 #nav {
   transition-duration: 0.5s;
+}
+
+.profilebox {
+  background-color: #708AA7;
+  width: 200px;
+  height: 45px;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.txtlink {
+  color: white;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.profilebox .whiteicon {
+  margin-left: 5px;
+}
+
+.logoutbox {
+  background-color: #708AA7;
+  width: 50px;
+  height: 45px;
+  border-radius: 15px;
+}
+
+.logoutbox .whiteicon {
+  margin-left: 5px
+}
+
+.logouttxt {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+      background-color: #18477E !important;
+  }
+  .profilebox {
+      background-color: transparent !important;
+      margin-right: 0;
+      width: 100%;
+  }
+  .profilebox .whiteicon {
+    margin-left: 0px;
+  }
+  .logoutbox {
+    background-color: transparent !important;
+    margin-right: 0; 
+    width: 100%;
+  }
+  .logoutbox .whiteicon {
+    margin-left: 0px;
+   
+  }
+  .active:after {
+   display: none;
+  }
+  .logouttxt {
+    display: inline;
+  }
+  .navbar-collapse {
+    margin-left: 30px;
+  }
 }
