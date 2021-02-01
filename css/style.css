@@ -6,7 +6,7 @@ body{
     width: auto;
     height: 70px;
     margin: 10px 20px;
-    display: inline;
+    display: inline-block;
 }   
 
 .in-body {
@@ -69,6 +69,16 @@ display: flex;
   width: 35px;
   height: auto;
 }
+
+.d-md-flex {
+  background-image: url('../pic/banner/banner0.png');
+  background-color: #e5e5e5;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 
 /* Segment */
 
@@ -144,6 +154,7 @@ header {
   height: 50vh;
   background: url('../pic/banner/banner.png') no-repeat 50% 50%;
   background-size: cover;
+  display:inline-block;
 }
 
 .nav-item {
@@ -167,10 +178,12 @@ header {
 .site-title {
   color: #ffffff; 
   padding: 200px 40px;
+  position: relative;
+  display: inline-block;
 }
 
 #nav {
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 
 .profilebox {
