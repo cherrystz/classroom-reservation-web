@@ -4,7 +4,7 @@ body{
 
 .cosci-logo {
     width: auto;
-    height: 70px;
+    height: 80px;
     margin: 10px 20px;
     display: inline-block;
 }   
@@ -187,7 +187,7 @@ display: flex;
 /* segment */
 
   .font18 {
-    font-size: 18px;
+    font-size: 18px!important;
   }
   .font18bold {
     font-size: 18px;
@@ -254,6 +254,7 @@ border-radius: 10px;
   color: white;
   margin-right: 15px;
   vertical-align: middle;
+  font-size: 20px;
 }
 
 .profilebox .whiteicon {
@@ -329,3 +330,26 @@ border-radius: 10px;
   }
 }
 
+.profilebtn {
+  background-color: #05BA0D;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 10px 100px;
+  float: right;
+}
+
+.form-control:disabled {
+  background-color: transparent !important;
+  border: none !important;
+  color: #969191 !important
+}
+
+.inputprofile {
+  border-radius: 10px !important;
+  background-color: #E6ECF2 !important;
+  border: none !important;
+  font-size: 18px;
+}
