@@ -13,7 +13,7 @@ var connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "classreserve_database"
+    database: "classroom_reservation"
 });
 
 
@@ -38,6 +38,11 @@ app.get("/login", function (req, res) {
 //admin home
 app.get("/admin-home", function (req, res) {
     res.sendFile(path.join(__dirname + "/admin_home.html"));
+});
+
+//classroom
+app.get("/classroom", function (req, res) {
+    res.sendFile(path.join(__dirname + "/admin_classroom.html"));
 });
 
 //logout
