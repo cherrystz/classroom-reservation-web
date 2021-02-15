@@ -13,7 +13,7 @@ var connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "classroom_reservation"
+    database: "classreserve_database"
 });
 
 
@@ -106,3 +106,4 @@ app.post("/auth", function (req, res) {
 
 app.listen(3000);
 console.log('running on port 3000...')
+
