@@ -73,7 +73,19 @@ display: flex;
   color: red;
   font-size: 17px;
 }
-
+/* @media (min-width: 769px){
+  .d-md-flex {
+    background-image: url('../pic/banner/banner0.png');
+    background-color: #e5e5e5;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex!important;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+} */
 .d-md-flex {
   background-image: url('../pic/banner/banner0.png');
   background-color: #e5e5e5;
@@ -200,7 +212,7 @@ header {
   position: relative;
 }
 
-.navbar-nav > .active:after {
+.active:after {
   content: "";
   position: absolute;
   width: 90%;
@@ -210,7 +222,7 @@ header {
 
 .whiteicon {
   filter: invert(100%);
-  margin-right: 5px;
+  margin-right: 2px;
   margin-bottom: 2px;
 }
 
@@ -269,7 +281,7 @@ border-radius: 10px;
   display: none;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   .navbar {
       background-color: #18477E !important;
   }
@@ -290,7 +302,7 @@ border-radius: 10px;
     margin-left: 0px;
    
   }
-  .navbar-nav > .active:after {
+  .active:after {
    display: none;
   }
   .logouttxt {
@@ -308,9 +320,10 @@ border-radius: 10px;
   padding: 50px 40px;
   display: inline-block;
   }
+
+
+
 }
-
-
 @media only screen and (max-width: 415px) {
   .site-title {
   padding: 20px 40px;
@@ -394,78 +407,10 @@ table th:last-child{
   height: 40px;
   border: none;
   border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  color: #396191;
 }
 
 .approvalicon {
   text-align: center;
   margin-bottom: 5px;
 }
-
-.buildingbtn{
-  background-color: #2561A2;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.buildingbtn > .active {
-  background-color: #BED0E4;
-}
-
-.buildingbtn:hover {
-  background-color: #1a436e;
-  color: white;
-}
-
-.line {
-  background-color: #E6ECF2;
-  height: 5px;
-  width: 30%;
-  border: none;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.managebtn {
-  right: 100%;
-  background-color:#E4ECF3;
-  width: 180px;
-  height: 40px;
-  border-radius: 40px;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #2561A2;
-}
-
-.editbtn {
-  background-color: #FFF3E9;
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-}
-
-.deletebtn {
-  background-color: #FAE2E2;
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
