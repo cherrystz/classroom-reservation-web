@@ -1,0 +1,355 @@
+body{
+  font-family: 'Kanit', sans-serif !important;
+}
+
+.cosci-logo {
+    width: auto;
+    height: 80px;
+    margin: 10px 20px;
+    display: inline-block;
+}   
+
+.in-body {
+display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.login {
+  min-height: 100vh;
+}
+
+.login-btn {
+    background-color: #18477e;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.user-btn {
+    background-color: #18477e;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.block-inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#blue-line-shapes {
+    width: 11px;
+    height: 73px;
+    border-radius: 5px;
+    background: #18477E;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.infobox {
+  display: inline-block;
+  border-radius: 15px;
+  width: 100%;
+  height: 25%;
+  background-color: white;
+  
+}
+
+.back-btn {
+  display: block;
+  margin-bottom: 40px;
+  width: 35px;
+  height: auto;
+}
+/* @media (min-width: 769px){
+  .d-md-flex {
+    background-image: url('../pic/banner/banner0.png');
+    background-color: #e5e5e5;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex!important;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+} */
+.d-md-flex {
+  background-image: url('../pic/banner/banner0.png');
+  background-color: #e5e5e5;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  
+}
+
+
+
+ /*ipad login*/
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) { 
+.d-md-flex {
+    display: none !important;
+    align-items: stretch;
+    height: 40vh;
+}
+.col-md-6 {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+.login {
+  min-height: 60vh;
+}
+ }
+
+ /* ipad Pro login */
+ @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) { 
+  .d-md-flex {
+      display: none !important;
+      align-items: stretch;
+      height: 40vh;
+  }
+  .col-md-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .login {
+    min-height: 60vh;
+  }
+   }
+
+/* Segment */
+
+.flight-types {
+    display: flex;
+    max-width: 161px;
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+    margin: 0 auto;
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #999999;
+    background-color: #fff;
+  }
+  .flight-types > input {
+    display: none;
+  }
+  .flight-types > input:checked + label {
+    color: #fff;
+  }
+  .flight-types > input:nth-of-type(1):checked ~ label:last-of-type:before {
+    transform: translateX(calc(0% + 0px));
+  }
+  .flight-types > input:nth-of-type(2):checked ~ label:last-of-type:before {
+    transform: translateX(calc(100% + 0px));
+  }
+  .flight-types label {
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+  .flight-types label:last-of-type:before {
+    content: "";
+    display: block;
+    max-width: calc(50% - 0px);
+    margin: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(0);
+  }
+  .flight-types label {
+    padding: 6px 3px;
+    transition: color 250ms cubic-bezier(0, 0.95, 0.38, 0.98);
+  }
+  .flight-types label:before {
+    background: #18477E;
+    border-radius: 20px;
+    transition: all 250ms cubic-bezier(0, 0.95, 0.38, 0.98);
+  }
+/* segment */
+
+  .font18 {
+    font-size: 18px!important;
+  }
+  .font18bold {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+header {
+  width: 100%;
+  height: 360px;
+  background: url('../pic/banner/banner.png') no-repeat 50% 50%;
+  background-size: cover;
+  display:inline-block;
+  padding: 0 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.active:after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.whiteicon {
+  filter: invert(100%);
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.site-title {
+  padding: 200px 40px;
+  display: inline-block;
+}
+
+.site-title h2 {
+  font-size: 35px;
+}
+
+.underline {
+margin-top: 30px;
+width: 70%;
+height: 5px;
+background: #E6ECF2;
+border-radius: 10px;
+}
+
+#nav {
+  transition-duration: 1s;
+}
+
+.profilebox {
+  background-color: #708AA7;
+  width: 200px;
+  height: 45px;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.txtlink {
+  color: white;
+  margin-right: 15px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.profilebox .whiteicon {
+  margin-left: 5px;
+}
+
+.logoutbox {
+  background-color: #708AA7;
+  width: 50px;
+  height: 45px;
+  border-radius: 15px;
+}
+
+.logoutbox .whiteicon {
+  margin-left: 5px
+}
+
+.logouttxt {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+      background-color: #18477E !important;
+  }
+  .profilebox {
+      background-color: transparent !important;
+      margin-right: 0;
+      width: 100%;
+  }
+  .profilebox .whiteicon {
+    margin-left: 0px;
+  }
+  .logoutbox {
+    background-color: transparent !important;
+    margin-right: 0; 
+    width: 100%;
+  }
+  .logoutbox .whiteicon {
+    margin-left: 0px;
+   
+  }
+  .active:after {
+   display: none;
+  }
+  .logouttxt {
+    display: inline;
+  }
+  .navbar-collapse {
+    margin-left: 30px;
+  }
+
+  header {
+    padding: 200px 0;
+  }
+
+  .site-title {
+  padding: 50px 40px;
+  display: inline-block;
+  }
+
+
+
+}
+@media only screen and (max-width: 415px) {
+  .site-title {
+  padding: 20px 40px;
+  display: inline-block;
+  }
+
+  .site-title h2 {
+    font-size: 30px;
+  }
+}
+
+.profilebtn {
+  background-color: #05BA0D;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 10px 100px;
+  float: right;
+}
+
+.form-control:disabled {
+  background-color: transparent !important;
+  border: none !important;
+  color: #969191 !important
+}
+
+.inputprofile {
+  border-radius: 10px !important;
+  background-color: #E6ECF2 !important;
+  border: none !important;
+  font-size: 18px;
+}
