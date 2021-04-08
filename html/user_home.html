@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>COSCI - ระบบจองห้องเรียน | Home</title>
+
+        <link rel="stylesheet" href="css/style-user_home.css">
+        <link rel="stylesheet" href="css/table.css">
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&display=swap" rel="stylesheet">  
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/navbar.js"></script>
+    </head>
+    <style>
+        body{
+            background-image: url(pic/banner/banner.png);
+            background-color: #0e65a0;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+    
+    <body>
+        <header>
+            
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top" id="nav">
+        
+        <a class="navbar-brand" href="user_home.html">
+            <img src="pic/coscilogo.png" class="cosci-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto"  id="navmenu">
+                
+                <li class="nav-item active">
+                    <a class="nav-link font18" href="user_home.html">
+                        <span class="whiteicon"><img src="Zest.iconjar/icons/home.svg"></span>
+                        <span class="txtlink">หน้าแรก</span></a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link font18" href="user_searching-1.html">
+                        <span class="whiteicon"><img src="Zest.iconjar/icons/calendar-check.svg"></span>
+                        <span class="txtlink">จองห้องเรียน</span></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link font18" href="user_history.html">
+                      <span class="whiteicon"> <img src="Zest.iconjar/icons/history.svg"></span>
+                      <span class="txtlink">ประวัติการจอง</span></a>
+              </li>
+            
+                <li class="nav-item">
+                  <a class="nav-link font18 profilebox" href="user_profile.html">
+                    <span class="whiteicon"> <img src="Zest.iconjar/icons/user.svg"></span>
+                    <span class="txtlink profiletxt" id="">*สิทธิชัย*</span></a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link font18 logoutbox" href="#">
+                    <span class="whiteicon"> <img src="Zest.iconjar/icons/sign-out.svg"></span>
+                    <span class="txtlink logouttxt">ออกจากระบบ</span></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+            
+        <div class="text-white site-title" style="margin-bottom:50px">
+            <h2 style="line-height: 50px;">ยินดีต้อนรับ, คุณสิทธิชัย <br/>
+            วิทยาลัยนวัตกรรมสื่อสารสังคม</h2>
+            
+            <svg height="50" width="60%" style="position: absolute">
+                <line x1="0" y1="10" x2="400" y2="10" style="stroke:#ffffff;stroke-width:4;position: absolute"></line>
+            </svg>    
+            </div>    
+        </header>
+        <div class="infobox">
+            <div class="info-headline">
+                <svg height="20" width="20">
+                <line x1="0" y1="0" x2="0" y2="20" class="eiei" style="stroke:#18477e;stroke-width:10;"></line>
+                </svg>
+            สถานะคำร้องขอการจองห้องเรียนปัจจุบัน
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                  <thead class="thead-style">
+                    <tr>
+                      <th>วันที่</th>
+                      <th>ช่วงเวลา</th>
+                      <th>ห้อง</th>
+                      <th>อาคาร</th>
+                      <th>สถานะ</th>
+                      <th> </th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>02/12/2564</td>
+                      <td>08/12/2564</td>
+                      <td>9.30 - 12.30</td>
+                      <td>601</td>
+                      <td><div class="status sending">รอการอนุมัติ</div></td>
+                     
+                      <td><button type="button" data-toggle="modal" data-target="#home-info-modal" class="button" data-backdrop="static" data-keyboard="false">
+                        <span class="info-icon"> <img src="Zest.iconjar/icons/copy.svg"/></span>
+                      </button></td>
+                    </tr>
+                    <tr>
+                        <td>02/12/2564</td>
+                        <td>08/12/2564</td>
+                        <td>9.30 - 12.30</td>
+                        <td>601</td>
+                        <td><div class="status sending">รอการอนุมัติ</div></td>
+                        <td><button type="button" data-toggle="modal" data-target="#home-info-modal" class="button" data-backdrop="static" data-keyboard="false">
+                          <span class="info-icon"> <img src="Zest.iconjar/icons/copy.svg"/></span>
+                        </button></td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <div class="modal fade" id="home-info-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-xl modal-dialog-centered modal-dialog" role="document">
+                  <div class="modal-content">
+        
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="Zest.iconjar/icons/x.svg"></span>
+                          </button>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-5  rounded-left m-h-60 d-none d-sm-block">
+                                    <img src="pic/ตึกCOSCI .jpg" class="buildingimg">
+                                </div>
+                                <div class="col-md-7 py-1 px-sm-1 my-3">
+            
+                                    <div id="blue-line-shapes" style="height: 25px; width: 6px; margin-left: 20px; margin-top: 24px;"></div>
+                            <h3 class="display-5 classname" style="color: #18477e; font-weight: bold;">ห้อง 601<span class="buildingname">อาคารนวัตกรรมสื่อสารสังคม</span></h3>
+                    <div class="table-responsive">  
+                     <table class="reservedata" style="width:50%">
+                    <tr>
+                        <th class="font18bold" style="color: #18477e;">วันที่ใช้บริการ :</th>
+                        <th id="reservedate" class="resdatashow font18 mb-3">08/12/2564</th>
+                    </tr>
+                    <tr>
+                        <th class="font18bold" style="color: #18477e;">ช่วงเวลาที่จอง:</th>
+                        <th id="reservetime" class="resdatashow font18 mb-3">9:30 - 12:30</th>
+                    </tr>
+                    <tr>
+                        <th class="font18bold" style="color: #18477e;">ชื่อ-นามสกุล :</th>
+                        <th id="name" class="resdatashow font18 mb-3">อ.สิทธิชัย วรโชติกำจร</th>
+                    </tr>
+                    <tr>
+                        <th class="font18bold" style="color: #18477e;">วิชา :</th>
+                        <th id="subject" class="resdatashow font18 mb-3">(CSC472) SOCIAL COMMUNICATION INNOVATION THESIS </th>
+                    </tr>
+                    <tr>
+                        <th class="font18bold" style="color: #18477e;">วัตถุประสงค์ :</th>
+                        <th id="purpose" class="resdatashow font18 mb-3">สอบนอกเวลา</th>
+                    </tr>
+        
+                  </table>
+                
+                </div> 
+                
+            
+                  <div class="text-center">
+            <button type="button" class="btn-red" style="margin-top:7%;" data-dismiss="modal">ยกเลิกการจอง</button>
+          </div>
+            </div>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+               
+            </div>
+            
+            
+    
+    
+    </body>
+
+</html>

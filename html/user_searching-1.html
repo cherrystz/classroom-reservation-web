@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COSCI - ระบบจองห้องเรียน | Reservation</title>
+
+    <link rel="stylesheet" href="css/style-user_home.css">
+    <link rel="stylesheet" href="css/vanilla-calendar.css" />
+
+    <!-- JS -->
+    <script src="js/vanilla-calendar.js"></script>
+    <script
+      src="https://kit.fontawesome.com/608ef531fa.js"
+      crossorigin="anonymous"
+    ></script>
+    
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Datepicker -->
+    <link href="/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+    <script src="/dist/js/bootstrap-datepicker-custom.js"></script>
+    <script
+      src="/dist/locales/bootstrap-datepicker.th.min.js"
+      charset="UTF-8"
+    ></script>
+
+    <script src="js/navbar.js"></script>
+  </head>
+  <style>
+    header {
+      background-image: url(pic/banner/banner.png);
+      background-color: #0e65a0;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+
+  <body>
+    <header>
+      <!-- Navigation bar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top"
+        id="nav"
+      >
+        <a class="navbar-brand" href="user_home.html">
+          <img src="pic/coscilogo.png" class="cosci-logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto" id="navmenu">
+            <li class="nav-item">
+              <a class="nav-link font18" href="user_home.html">
+                <span class="whiteicon"
+                  ><img src="Zest.iconjar/icons/home.svg"
+                /></span>
+                <span class="txtlink">หน้าแรก</span></a
+              >
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link font18" href="user_searching-1.html">
+                <span class="whiteicon"
+                  ><img src="Zest.iconjar/icons/calendar-check.svg"
+                /></span>
+                <span class="txtlink">จองห้องเรียน</span></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link font18" href="user_history.html">
+                  <span class="whiteicon"> <img src="Zest.iconjar/icons/history.svg"></span>
+                  <span class="txtlink">ประวัติการจอง</span></a>
+          </li>
+
+            <li class="nav-item">
+              <a class="nav-link font18 profilebox" href="user_profile.html">
+                <span class="whiteicon">
+                  <img src="Zest.iconjar/icons/user.svg"
+                /></span>
+                <span class="txtlink profiletxt" id="">*สิทธิชัย*</span></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link font18 logoutbox" href="#">
+                <span class="whiteicon">
+                  <img src="Zest.iconjar/icons/sign-out.svg"
+                /></span>
+                <span class="txtlink logouttxt">ออกจากระบบ</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="text-white site-title">
+        <h2 style="line-height: 50px; font-size: 35px">
+          ระบบจองห้องออนไลน์<br />
+          วิทยาลัยนวัตกรรมสื่อสารสังคม
+        </h2>
+
+        <svg height="50" width="60%" style="position: absolute">
+          <line
+            x1="0"
+            y1="10"
+            x2="400"
+            y2="10"
+            style="stroke: #ffffff; stroke-width: 4; position: absolute"
+          ></line>
+        </svg>
+      </div>
+
+      <div class="site-title" style="padding-top: 50px">
+        <p style="font-size: 20px">ค้นหาข้อมูลการจองห้องเรียน</p>
+
+        <div class="row user-searching">
+          <form class="input-group col">
+            <div>
+              <input
+                type=""
+                name=""
+                class="search-input datepicker"
+                style="width: 100%; border-radius: 13px"
+                placeholder="วันที่และเวลาที่ต้องการจอง"
+                data-date-format="dd/mm/yyyy"
+                data-toggle="modal"
+                data-target="#bookingRoom"
+              />
+            </div>
+          </form>
+            <!-- overlay modal -->
+            <div  class="modal fade"
+            id="bookingRoom"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+              <div class="modal-lg modal-dialog-centered modal-dialog" role="document">
+                <div class="modal-content">
+      
+                  <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true"><img src="static/Zest.iconjar/icons/x.svg"></span>
+                        </button>
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col-md-6  rounded-left mh-60 d-sm-block">
+                                <div style="margin-bottom:20px">
+                                <div class="front-text"></div>
+                               <div class="text">เลือกวันและเวลาที่ต้องการจอง</div>
+                              </div>
+                                <div id="myCalendar" class="vanilla-calendar"></div>
+                              </div>
+                              <div class="col-md-6 py-1 px-sm-1 my-3">
+          
+                                <div class="start-time">
+                                  <button
+                                    type="button"
+                                    id="dd"
+                                    class="btn btn-primary"
+                                    data-toggle="dropdown"
+                                  >
+                                  <p class="float-left" style="margin-top:5px;">
+                                    เวลาเริ่ม
+                                  </p>
+                                    <i
+                                        class="far fa-clock float-right"
+                                        style="color: #969191;margin-top:8px;"
+                                      ></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-lg-left">
+                                    <li><a class="dropdown-item" href="#">08:30</a></li>
+                                    <li><a class="dropdown-item" href="#">09:30</a></li>
+                                    <li><a class="dropdown-item" href="#">10:30</a></li>
+                                    <li><a class="dropdown-item" href="#">11:30</a></li>
+                                    <li><a class="dropdown-item" href="#">12:30</a></li>
+                                  </ul>
+                                </div>
+                                <div class="end-time">
+                                  <button
+                                    type="button"
+                                    id="dd"
+                                    
+                                    class="btn btn-primary"
+                                    data-toggle="dropdown"
+                                  >
+                                    <p class="float-left" style="margin-top:5px">
+                                      เวลาจบ
+                                    </p>
+                                    <i
+                                        class="far fa-clock float-right"
+                                        style="color: #969191;margin-top:8px;"
+                                      ></i>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">10:30</a></li>
+                                    <li><a class="dropdown-item" href="#">11:30</a></li>
+                                    <li><a class="dropdown-item" href="#">12:30</a></li>
+                                  </ul>
+                                </div>
+                              
+                                
+                                <button type="submit" class="submit-searchroom btn-block text-uppercase mb-2 rounded-pill shadow-sm "
+                                style="height: 40px;background-color: #2BC431;margin-top:200px;" id="submit_btn">บันทึก</button>
+                             
+                              </div>
+          
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+          <div class="col">
+            <select class="search-select" style="width: 100%">
+              <option value="" selected>ระบุห้องที่ต้องการ</option>
+            </select>
+          </div>
+
+          <div class="col">
+            <input
+              class="search-input"
+              style="width: 100%"
+              placeholder="ระบุจำนวนนิสิต"
+            />
+          </div>
+
+          <div class="col">
+            <a href="user_searching-2.html">
+                <button class="btn-green" style="width: 100%" href="user_searching-2.html">ค้นหา</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="py-5 d-flex"
+      style="justify-content: center; margin-bottom: 100px"
+    >
+      <svg height="50" width="70%" style="position: absolute; max-width: 400px">
+        <line
+          x1="0%"
+          y1="5"
+          x2="100%"
+          y2="5"
+          style="stroke: #e6ecf2; stroke-width: 4; position: absolute"
+        ></line>
+      </svg>
+      <label style="color: #bdc4cb; font-size: 20px; margin-top: 30px"
+        >รอการค้นหาห้องเรียน</label
+      >
+    </div>
+  </body>
+
+  <script>
+    let calendar = new VanillaCalendar({
+      selector: "#myCalendar",
+      months: [
+        "มกราคม",
+        "กุมภาพันธ์",
+        "มีนาคม",
+        "เมษายน",
+        "พฤษภาคม",
+        "มิถุนายน",
+        "กรกฎาคม",
+        "สิงหาคม",
+        "กันยายน",
+        "ตุลาคม",
+        "พฤศจิกายน",
+        "ธันวาคม",
+      ],
+      shortWeekday: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"],
+      onSelect: (data, elem) => {
+        console.log(data, elem);
+      },
+    });
+  </script>
+</html>

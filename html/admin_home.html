@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COSCI - ระบบจองห้องเรียน</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">  
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/approvalmodal.js"></script>
+    
+</head>
+
+<style>
+    .navbar-dark .navbar-nav .nav-link {
+    color:white;
+    }
+    .nav-link:hover .whiteicon {
+    opacity: 0.5;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    }
+
+    .nav-link:hover .txtlink {
+        color: rgba(255, 255, 255, 0.5);
+    } 
+
+    /* .profilebox:hover {
+        opacity: 0.5;
+    } */
+ </style>
+
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top" id="nav">
+        
+        <a class="navbar-brand" href="admin_home.html">
+            <img src="pic/coscilogo.png" class="cosci-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto"  id="navmenu">
+                <li class="nav-item active">
+                    <a class="nav-link font18" href="admin_home.html">
+                        <span class="whiteicon"><img src="Zest.iconjar/icons/home.svg"></span>
+                        <span class="txtlink">หน้าแรก</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font18" href="admin_classroom.html">
+                        <span class="whiteicon"><img src="Zest.iconjar/icons/document.svg"></span>
+                        <span class="txtlink">ห้องเรียน</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font18" href="admin_history.html">
+                        <span class="whiteicon"> <img src="Zest.iconjar/icons/history.svg"></span>
+                        <span class="txtlink">ประวัติการจอง</span></a>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link font18 profilebox">
+                        <span class="whiteicon"> <img src="Zest.iconjar/icons/user.svg"></span>
+                        <span class="txtlink profiletxt">Profile</span></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font18 logoutbox" href="#">
+                    <span class="whiteicon"> <img src="Zest.iconjar/icons/sign-out.svg"></span>
+                    <span class="txtlink logouttxt">ออกจากระบบ</span></a>
+                </li>
+
+            </ul>
+        </div>
+        
+    
+    </nav>
+    <div class="text-white site-title d-inline-flex">
+            <h2>ยินดีต้อนรับเข้าสู่ระบบจองห้องออนไลน์
+                <br>
+                <div class="underline"></div>
+            </h2>
+        </div>
+</header>
+
+<main class="py-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+                <div id="blue-line-shapes" style="height: 25px; width: 6px; margin-left: 20px; margin-top: 4px"></div>
+                <div class="block-inline">
+                <h3 class="title-page">คำร้องขอการจองห้องเรียนปัจจุบัน</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 col-md-12">
+        <div class="container-fluid">
+            <div class="table-responsive">
+            <table class="table">
+              <thead class="thead-style">
+                <tr>
+                  <th>วันที่ทำรายการ</th>
+                  <th>วันที่ใช้บริการ</th>
+                  <th>ช่วงเวลาที่จอง</th>
+                  <th>หมายเลขห้อง</th>
+                  <th>ชื่อผู้จอง</th>
+                  <th>สถานะ</th>
+                  <th> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>02/12/2564</td>
+                  <td>08/12/2564</td>
+                  <td>9.30 - 12.30</td>
+                  <td>601</td>
+                  <td>อ.สิทธิชัย วรโชติกำจร</td>
+                  <td><div class="status sending">รอการอนุมัติ</div></td>
+                  <td><button type="button" data-toggle="modal" data-target="#approvalmodal" class="approvalbtn" data-backdrop="static" data-keyboard="false">
+                    <span class="approvalicon"> <img src="Zest.iconjar/icons/copy.svg"></span>
+                  </button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="approvalmodal" tabindex="-1" role="dialog" aria-labelledby="approvalmodal" aria-hidden="true">
+        <div class="modal-xl modal-dialog-centered modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="Zest.iconjar/icons/x.svg"></span>
+                  </button>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5  rounded-left m-h-60 d-none d-sm-block">
+                            <img src="pic/ตึกCOSCI .jpg" class="buildingimg">
+                        </div>
+                        <div class="col-md-7 py-1 px-sm-1 my-3">
+    
+                            <div id="blue-line-shapes" style="height: 25px; width: 6px; margin-left: 20px; margin-top: 24px;"></div>
+                    <h3 class="display-5 classname" style="color: #18477e; font-weight: bold;">ห้อง 601<span class="buildingname">อาคารนวัตกรรมสื่อสารสังคม</span></h3>
+            <div class="table-responsive">  
+             <table class="reservedata" style="width:50%">
+            <tr>
+                <th class="font18bold" style="color: #18477e;">วันที่ใช้บริการ :</th>
+                <th id="reservedate" class="resdatashow font18 mb-3">08/12/2564</th>
+            </tr>
+            <tr>
+                <th class="font18bold" style="color: #18477e;">ช่วงเวลาที่จอง:</th>
+                <th id="reservetime" class="resdatashow font18 mb-3">9:30 - 12:30</th>
+            </tr>
+            <tr>
+                <th class="font18bold" style="color: #18477e;">ชื่อ-นามสกุล :</th>
+                <th id="name" class="resdatashow font18 mb-3">อ.สิทธิชัย วรโชติกำจร</th>
+            </tr>
+            <tr>
+                <th class="font18bold" style="color: #18477e;">วิชา :</th>
+                <th id="subject" class="resdatashow font18 mb-3">(CSC472) SOCIAL COMMUNICATION INNOVATION THESIS </th>
+            </tr>
+            <tr>
+                <th class="font18bold" style="color: #18477e;">วัตถุประสงค์ :</th>
+                <th id="purpose" class="resdatashow font18 mb-3">สอบนอกเวลา</th>
+            </tr>
+
+          </table>
+        
+        </div> 
+        
+        <form class="approval" id="approval">
+            <div class="approvalbox">
+            <div class="custom-control custom-radio mb-3">
+            <input type="radio" id="approve" name="approval" value="approve" class="custom-control-input">
+            <label for="approve" class="custom-control-label">อนุมัติ</label><br>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" id="unapprove" name="approval" value="unapprove" class="custom-control-input">
+            <label for="unapprove" class="custom-control-label">ไม่อนุมัติ เนื่องจาก :
+            
+        </label>
+        <input type="text" id="comment" name="comment" class="comment">
+        </div>
+    </div>
+        <button type="submit" class="login-btn btn-block text-uppercase mb-2 rounded-pill shadow-sm"
+        style="height: 40px;background-color: #2BC431;margin-top:20px;" id="submit_btn">บันทึก</button>
+        </form>
+        
+    </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      
+</main>
+</body>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>COSCI - ระบบจองห้องเรียน | Room-info</title>
+
+        <link rel="stylesheet" href="css/style-user_home.css">
+        <link rel="stylesheet" href="css/table.css">
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&display=swap" rel="stylesheet">  
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src="js/reservationbtn.js"></script>
+    </head>
+    <style>
+        body{
+            background-image: url(pic/banner/banner.png);
+            background-color: #0e65a0;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav
+          class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top"
+          id="nav"
+        >
+          <a class="navbar-brand" href="user_home.html">
+            <img src="pic/coscilogo.png" class="cosci-logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" id="navmenu">
+              <li class="nav-item">
+                <a class="nav-link font18" href="user_home.html">
+                  <span class="whiteicon"
+                    ><img src="Zest.iconjar/icons/home.svg"
+                  /></span>
+                  <span class="txtlink">หน้าแรก</span></a
+                >
+              </li>
+  
+              <li class="nav-item active">
+                <a class="nav-link font18" href="user_searching-1.html">
+                  <span class="whiteicon"
+                    ><img src="Zest.iconjar/icons/calendar-check.svg"
+                  /></span>
+                  <span class="txtlink">จองห้องเรียน</span></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link font18" href="user_history.html">
+                    <span class="whiteicon"> <img src="Zest.iconjar/icons/history.svg"></span>
+                    <span class="txtlink">ประวัติการจอง</span></a>
+            </li>
+  
+              <li class="nav-item">
+                <a class="nav-link font18 profilebox" href="user_profile.html">
+                  <span class="whiteicon">
+                    <img src="Zest.iconjar/icons/user.svg"
+                  /></span>
+                  <span class="txtlink profiletxt" id="">*สิทธิชัย*</span></a
+                >
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link font18 logoutbox" href="#">
+                  <span class="whiteicon">
+                    <img src="Zest.iconjar/icons/sign-out.svg"
+                  /></span>
+                  <span class="txtlink logouttxt">ออกจากระบบ</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <div class="back-btn-info">
+      <a href="user_searching-2.html">
+        <button>
+          <img src="Zest.iconjar/icons/circled-left-chevron.svg">
+        </button>
+      </a>
+        <span>
+            ย้อนกลับ
+        </span>
+    </div>
+    <div class="info-container">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 rounded-left mh-60 d-none d-sm-block">
+                <img src="pic/ตึกCOSCI .jpg">
+            </div>
+            <div class="col-md-9 py-1 px-sm-1 my-3" style="color: #18477e">
+            
+            
+              
+                <div id="blue-line-shapes" style="height: 25px; width: 6px; margin-left: 20px;"></div>
+                <h3 class="classname" style="color: #18477e; font-weight: bold;font-size:24px;">ห้อง 601<span class="buildingname">&nbsp;&nbsp;อาคารนวัตกรรมสื่อสารสังคม</span></h3>
+                
+                <div class="form-group row mx-4 mb-2 mt-2">
+                  <label for="name" class="col-md-2 col-form-label font18bold">วันที่ใช้บริการ :</label>
+                  <div class="col-md-10">
+                     <input disabled type="text" class="form-control font18" value="08/12/2564"> 
+                  </div>
+              </div>
+              <div class="form-group row mx-4 mb-2">
+                <label for="name" class="col-md-2 col-form-label font18bold">ช่วงเวลาที่จอง :</label>
+                <div class="col-md-10">
+                   <input disabled type="text" class="form-control font18" value="9:30 - 12:30"> 
+                </div>
+            </div>
+            <div class="form-group row mx-4 mb-2">
+              <label for="name" class="col-md-2 col-form-label font18bold">ชื่อ-นามสกุล :</label>
+              <div class="col-md-10">
+                 <input disabled type="text" class="form-control font18" value="อ.สิทธิชัย วรโชติกำจร"> 
+              </div>
+          </div>
+          <div class="form-group row mx-4 mb-2">
+            <label for="name" class="col-md-2 col-form-label font18bold">วิชา<span style="color:red">*</span> :</label>
+            <div class="col-md-10">
+              <div class="custom-dd">
+                <select class="form-select" id="subject_drop">
+                  <option value="" hidden>เลือกรายวิชา</option>
+                  <option value="1">วิชาที่ 1</option>
+                  <option value="2">วิชาที่ 2</option>
+                  <option value="3">วิชาที่ 3</option>
+                  <option value="4">วิชาที่ 4</option>
+                  <option value="5">วิชาที่ 5</option>
+                  <option value="6">วิชาที่ 6</option>
+                </select>
+              </div>
+            </div>
+        </div>
+        <div class="form-group row mx-4 mb-4">
+          <label for="name" class="col-md-2 col-form-label font18bold">วัตถุประสงค์<span style="color:red">*</span> :</label>
+          <div class="col-md-10">
+            <textarea class="text-input" id="purpose"></textarea>
+          </div>
+          <div class="submit-btn justify-content-end">
+            <button type="submit" 
+                    class="submit-btn text-uppercase mb-2 rounded-pill shadow-sm "
+                    style="height: 40px;background-color: #2BC431;margin-top:20px;" 
+                    id="submit_btn"
+                    data-toggle="modal"
+                    data-target="#confrim-modal">
+                    บันทึก
+            </button>
+            
+
+            <div class="modal fade" id="confrim-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="width: 446px;">
+                  <div class="modal-body" style="height: 434px; width: 446px;">
+                    <div class="check-box">
+                      <img src="Zest.iconjar/icons/circled-check.svg"/>
+                      <br>
+                      <span class="text-confrim-box1">
+                        การจองเสร็จสมบูรณ์
+                      </span>
+                      <br>
+                      <span class="text-confrim-box2">
+                        สถานะการจองของท่านจะถูกอนุมติใน 3 วัน<br>
+                        กรุณาเข้ามาตรวจสอบสถานะอีกครั้งในภายหลัง
+                      </span>
+                      <div class="line-cb">
+                        
+                      </div>   
+                    </div>
+                  </div>
+                    <a href="user_home.html">
+                      <button type="button" class="btn-back-home justify-content-center" >กลับหน้าแรก</button>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+        </div>
+               
+                
+            
+        </div>
+      </div>
+    
+    </div>
+    <div class="infoboxrespon align-self-center">
+      <div class="info-headline">
+        <svg height="20" width="20">
+        <line x1="0" y1="0" x2="0" y2="20" class="eiei" style="stroke:#18477e;stroke-width:10;"></line>
+        </svg>
+    เลือกอุปกรณ์ประจำห้อง
+    </div>
+    <div class="table-responsive">
+      <table class="table">
+        <thead class="thead-style">
+          <tr>
+            <th></th>
+            <th>รหัสอุปกรณ์</th>
+            <th>ชื่ออุปกรณ์</th>
+            <th>จำนวนในห้อง</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="itemcheckbox">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" >
+                <label class="custom-control-label" for="customControlID"></label>
+              </div>
+            </div>
+            </td>
+            <td>10005</td>
+            <td>เครื่องฉายภาพโปรเจ็กเตอร์ (Projector)</td>
+            <td>1 เครื่อง</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="itemcheckbox">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" >
+                <label class="custom-control-label" for="customControlID"></label>
+              </div>
+            </div>
+            </td>
+            <td>10014</td>
+            <td>ชุดไมโครโฟนไร้สาย</td>
+            <td>2 ชุด</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="itemcheckbox">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" >
+                <label class="custom-control-label" for="customControlID"></label>
+              </div>
+            </div>
+            </td>
+            <td>10043</td>
+            <td>ชุดเครื่องขยายเสียงพร้อมลำโพง</td>
+            <td>1 ชุด</td>
+          </tr>
+          
+            
+            
+        </tbody>
+      </table>
+    </div>
+    </div>
+</body>
+</html>
