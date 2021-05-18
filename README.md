@@ -1,5 +1,5 @@
 # COSCI Classroom Reservation
-Mock up Front-end Website.
+Mock up Front-end Website. for Project 4th grade students.
 ~~~
 branch
 - main
@@ -8,7 +8,9 @@ branch
 ~~~
 ## Info
 ~~~  
-- เว็บไซต์บางหน้าไม่สามารถทำ Responsive ได้
-- ไม่มีส่วนของ Modal ตรงส่วนของ Admin
-- ติดส่วนของตารางเรียน
+- Some website cannot Responsive.
+- Not have Modal in Admin side.
+- Stuck in Study Table side.
 ~~~
+
+> This project created by Pharuthapol Junpet, Phumipat Apivansri, and Thanawut Youngcharoen from College of Social Communication and Innovation, Srinakharinwirot University. (2021)
